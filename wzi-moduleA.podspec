@@ -7,8 +7,8 @@ Pod::Spec.new do |s|
   s.author       = {
                     "weizixiong" => "wzi90921@sina.com"
  }
-  #s.source     = { :git => "https://github.com/wzi90921/wzi-moduleA.git", :branch => 'master' }
-  s.source = { :git => "../wzi-moduleA" }
+  s.source     = { :git => "https://github.com/wzi90921/wzi-moduleA.git", :branch => 'master' }
+  #s.source = { :git => "../wzi-moduleA" }
   s.prefix_header_file = 'Classes/Prefix.h'
   s.source_files  = "Classes/**/*.{h,m}"
   s.requires_arc  = true
@@ -19,4 +19,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
   s.ios.framework = "UIKit"
   #s.libraries = "sqlite3","z"
+  s.dependency "wzi-baseLib"
 end
